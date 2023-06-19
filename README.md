@@ -1,7 +1,7 @@
 # Record-matching of STR profiles with fragmentary genomic SNP data
 
 ### Description
-This repository contains tools for performing record matching of pairs of genetic profiles, as described in [Kim and Rosenberg](https://doi.org/10.1101/2022.09.01.505545), [Kim et al.](https://doi.org/10.1016/j.cell.2018.09.008), and [Edge et al.](https://doi.org/10.1073/pnas.1619944114). The record matching pipeline starts with a set of reference files containing SNP-STR genotypes on reference individuals, a set of files containing STR profiles only on test individuals, a set of files containing SNP profiles only on test individuals, and a set of genetic map files. It outputs a match-score matrix for all STR-SNP pairs, with rows indicating STR profiles and columns indicating SNP profiles. It enables hypothesis tests for a variety of relatedness hypotheses based on SNP and STR profiles. For a demonstration of the record matching pipeline, please see [Example](https://github.com/jk2236/RecordMatching/tree/main/examples). The repository also includes scripts to generate simulated pedigrees and fragmentary genomic SNP data. 
+This repository contains tools for performing record matching of STR profiles with fragmentary genomic SNP profiles, as described in [Kim and Rosenberg](https://doi.org/10.1101/2022.09.01.505545). The record matching pipeline starts with a set of reference files containing SNP-STR genotypes on reference individuals, a set of files containing STR profiles only on test individuals, a set of files containing SNP profiles only on test individuals, and a set of genetic map files. It outputs a match-score matrix for all STR-SNP pairs, with rows indicating STR profiles and columns indicating SNP profiles. It enables hypothesis tests for a variety of relatedness hypotheses based on SNP and STR profiles. For a demonstration of the record matching pipeline, please see [Example](https://github.com/jk2236/RecordMatching/tree/main/examples). The repository also includes scripts to generate simulated pedigrees and fragmentary genomic SNP data. 
 
 ### Dependencies
 * [BEAGLE 4.1](https://faculty.washington.edu/browning/beagle/b4_1.html) 
@@ -13,11 +13,6 @@ This repository contains tools for performing record matching of pairs of geneti
 * HGDP SNP-STR data containing 872 individuals can be downloaded from [here](https://rosenberglab.stanford.edu/data/edgeEtAl2017/unphased_all_vcf.zip).
 * Human genetic maps. HapMap GrCh36 and GrCh37 genetic maps in PLINK format. Can be downloaded from [BEAGLE page](http://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/).
 * All genotypes in the reference panel must be **non-missing and phased** for BEAGLE imputation. 
-
-### Simulation of pedigrees
-
-
-### Simulation of fragmentary genomic SNP data
 
 ### Reference
 Kim J, Rosenberg NA (2022). Record-matching of STR profiles with fragmentary genomic SNP data. *bioRxiv*, 2022.09.01.505545. [10.1101/2022.09.01.505545](https://doi.org/10.1101/2022.09.01.505545).
