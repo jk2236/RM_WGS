@@ -12,8 +12,8 @@ This is an R package that can work in any platform that makes use of R.
 * [VCFtools](https://github.com/vcftools/vcftools). `conda` version is also available [here](https://anaconda.org/bioconda/vcftools).
 
 ### Dataset
+* A phased reference SNP-STR haplotype panel of [Saini et al.](https://doi.org/10.1038/s41467-018-06694-0) from the 1000 Genomes Project phase 3 can be downloaded from [here](https://gymreklab.com/2018/03/05/snpstr_imputation.html). Processed data containing 1-Mb SNP windows extending 500 kb in each direction from each CODIS locus midpoint can be found under [data/1KGP](https://github.com/jk2236/RM_WGS/tree/main/data/1KGP).
 * HGDP SNP-STR data containing 872 individuals can be downloaded from [here](https://rosenberglab.stanford.edu/data/edgeEtAl2017/unphased_all_vcf.zip).
-* A phased reference SNP-STR haplotype panel of [Saini et al.](https://doi.org/10.1038/s41467-018-06694-0) from the 1000 Genomes Project phase 3 can be downloaded from [here](https://gymreklab.com/2018/03/05/snpstr_imputation.html).
 * Human genetic maps. HapMap GrCh36 and GrCh37 genetic maps in PLINK format. Can be downloaded from [BEAGLE page](http://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/).
 * All genotypes in the reference panel must be **non-missing and phased** for BEAGLE imputation. 
 
